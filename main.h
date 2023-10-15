@@ -11,6 +11,7 @@ int _putchar(char c);
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
+void print_buffer(char buffer[], int *buff_ind);
 /* FLAGS */
 #define F_MINUS 1
 #define F_PLUS 2
