@@ -1,9 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
-<<<<<<< HEAD
 
 int _putchar(char c);
-=======
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -34,7 +32,6 @@ struct fmt
 	int (*fn)(va_list, char[], int, int, int, int);
 };
 
-
 /**
  * typedef struct fmt fmt_t - Struct op
  *
@@ -43,7 +40,6 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
->>>>>>> f4b3df1d64e9ab4fa5e435c68b4597a5f6a3eab0
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i, va_list list, char buffer[], int flags, int width, int precision, int size);
 
@@ -87,6 +83,7 @@ int write_number(int is_positive, int ind, char buffer[], int flags, int width, 
 int write_num(int ind, char bff[], int flags, int width, int precision, int length, char padd, char extra_c);
 int write_pointer(char buffer[], int ind, int length, int width, int flags, char padd, char extra_c, int padd_start);
 int write_unsgnd(int is_negative, int ind, char buffer[], int flags, int width, int precision, int size);
+
 /****************** UTILS ******************/
 int is_printable(char);
 int append_hexa_code(char, char[], int);
@@ -95,9 +92,4 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-<<<<<<< HEAD
-
-#endif
-=======
 #endif /* MAIN_H */
->>>>>>> f4b3df1d64e9ab4fa5e435c68b4597a5f6a3eab0
